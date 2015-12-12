@@ -4,6 +4,7 @@
 ######################################
 ledpin = 16 # specifies the pin the button LED is connected to
 blueintensity = 128 #specifies the intensity with which the blue light will shine
+sunriseduration = 3 #number of seconds for the sun to stay risen
 #####################################
 # end user customizable parameters  #
 #####################################
@@ -14,5 +15,5 @@ piglow.blue(blueintensity)
 piglow.show()
 led = LED(ledpin)
 led.on()
-sleep(3)
+sleep(sunriseduration)
 led.off()
